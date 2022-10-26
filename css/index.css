@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Manrope:wght@200;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/imagenes/mypageback.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Manrope";
+    padding-bottom: 40px;
+}
+
+header {
+    height: 114px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header nav {
+    width: 550px;
+    margin: auto;
+}
+
+header div {
+    left: 10%;
+    right: 10%;
+    top: 15%;
+    bottom: 15%;
+    border: 2px solid rgba(245, 245, 245, 0.7);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: grid;
+    place-items: center;
+    margin-left: 35px;
+}
+
+header div p {
+    font-family: 'Abyssinica SIL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    color: rgba(245, 245, 245, 0.7);
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    padding: 30px;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #88E8DC;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #88E8DC;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+nav a:hover::after {
+    width: 50%;
+}
+
+main {
+    width: 1226px;
+    min-height: 609px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#avatar {
+    margin-top: 114px;
+    margin-bottom: -22px;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.4));
+}
+
+main div {
+    margin: auto;
+}
+
+.text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 41px;
+    margin-top: 222px;
+    margin-bottom: 26px;
+}
+
+.text::before {
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    width: 39px;
+    background: black;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.text2 {
+    width: 697px;
+    font-family: 'Abyssinica SIL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+
+    color: #000000;
+}
+
+footer {
+    position: relative;
+    background-color: #FCE3D7;
+    border-radius: 50px 50px 0px 0px;
+    padding-inline: 104px;
+}
+
+
+.masonry-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.masonry-col {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+
+}
+
+.masonry-col>div {
+    flex: 1 1 auto;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#masonry3,
+#masonry4 {
+    flex: 2 1 auto;
+}
+
+footer img {
+    border-radius: 50px;
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+
+}
+
+footer h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 68px;
+    color: #463F3F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.button {
+    padding: 15px;
+    background: #CE708A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: block;
+    margin-block: 40px;
+    transition: 0.3s;
+
+
+}
+
+.buttoncontainer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.button:hover {
+    background: #98A0E1;
+
+}
+
+
+/* ### Contact me ### */
+
+form {
+    width: 613px;
+    background: rgba(252, 227, 215, 0.7);
+    border-radius: 50px;
+    margin-top: 83px;
+    height: min-content;
+
+}
+
+form input,
+form textarea {
+    font-family: "Manrope";
+    font-size: 1.2em;
+    font-weight: 200;
+    margin: 12px;
+    width: 512px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+
+}
+
+form article {
+
+    margin: 30px 25px 8px 25px;
+}
+
+form h3 {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 50px 50px 0px 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border: 2.2px solid #CE708A;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+}
+
+form button {
+    background: #CE708A;
+    border-radius: 30px;
+    padding: 30px 20px;
+    color: #fff;
+    font-family: "Manrope";
+    font-size: 18px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 30px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+form button:hover {
+    background-color: #98A0E1;
+    color: #463F3F;
+    font-weight: bold;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 56px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+section img {
+    width: 56px;
+    padding-left: 17px;
+
+}
+
+
+
+/* ### DOWNLOAD CV ### */
+
+#full-resume {
+    background: rgba(251, 247, 245, 0.7);
+    border-radius: 50px;
+    margin: auto;
+    width: 1226px;
+    margin-top: 80px;
+}
+
+#resume-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 74px 107px 52px 107px;
+}
+
+#resume-header h1 {
+    font-family: "Abyssinica SIL";
+    font-size: 42px;
+}
+
+#resume-header button {
+    background-color: rgb(255, 255, 255);
+    font-family: "Manrope";
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px rgba(72, 71, 71, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
+
+
+}
+
+#resume-header button:hover {
+    background-color: #8a8383;
+    color: #fff;
+
+}
+
+#resume-info>article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 107px;
+}
+
+.resume-date {
+    float: right;
+}
+
+#resume-info h3,
+.resume-date {
+    margin: 10px 0px;
+}
+
+#resume-info article p {
+    width: 500px;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 51px;
+}
+
+#not-margin {
+    margin-top: 0px;
+}
+
+#contact a {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
+
+#contact img {
+    vertical-align: middle;
+    width: 56px;
+    margin: 16px 16px 16px 0px;
+    padding-left: 0px;
+
+}

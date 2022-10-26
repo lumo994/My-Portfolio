@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucia Morana</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <p>LM</p>
+
+            </div>
+        </a>
+        <nav>
+            <a href="Contactme.html">Contact me</a>
+            <a href="Downloadcv.html">Download CV</a>
+            <a href="Projects.html">Projects</a>
+        </nav>
+
+
+    </header>
+    <main>
+        <section>
+            <h1 class="text">Let's chat.</h1>
+            <h2 class="text2">Tell me about your project</h2>
+            <div>
+                <p>Let's create something together</p> <img src="/imagenes/fist-bump.png" alt="">
+            </div>
+        </section>
+
+        <form action="mensaje" id="contact-form">
+            <h3>Send me a message!</h3>
+            <article>
+                <input type="text" name="nombre" placeholder="Full name*" required>
+                <input type="email" name="email" placeholder="Email*" required>
+                <input type="text" name="subject" placeholder="Subject*" required>
+                <textarea name="message" placeholder="Tell me about your project*" required></textarea>
+            </article>
+            <div>
+                <button>Send message</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            event.target.reset();
+            swal.fire({
+                icon: "success",
+                title: "Message sent!"
+            })
+        })
+    </script>
+</body>
