@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url("/imagenes/mypageback.png");
+    background-image: url("mypageback.png");
     background-attachment: fixed;
     background-size: cover;
     font-family: "Manrope";
